@@ -1,4 +1,4 @@
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RApiDatetime_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RApiDatetime/RApiDatetime_{{ version }}.tar.gz
-  sha256: 99730b15d14f2a86c699753297939d1c9eca90fbac92d41d1bfa477650b7dc28
+  sha256: 64ebfdc428907c8238f5b72af2e2f1858de8e185b6677558c75b5d22c211f71f
 
 build:
   merge_build_host: true  # [win]
