@@ -21,13 +21,14 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
   run:
@@ -41,11 +42,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=RApiDatetime
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: "Access to the C-level R date and datetime code is provided for C-level API use by other packages via registration of native functions. Client packages simply include a single header 'RApiDatetime.h' provided by this package, and also 'import' it.  The R Core group is the original author of the code made available\
     \ with slight modifications by this package. "
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
