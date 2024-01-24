@@ -3,6 +3,7 @@ About r-rapidatetime-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rapidatetime-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rapidatetime
 --------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=RApiDatetime
 Package license: GPL-2.0-or-later
 
 Summary: Access to the C-level R date and datetime code is provided for C-level API use by other packages via registration of native functions. Client packages simply include a single header 'RApiDatetime.h' provided by this package, and also 'import' it.  The R Core group is the original author of the code made available with slight modifications by this package. 
+
 About r-rapidatetime
 --------------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
