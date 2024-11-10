@@ -16,8 +16,8 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-  # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: True  # [win]
+  # As of 0.0.9, this package is explicitly Unix-only: https://cran.r-project.org/web/packages/RApiDatetime/ChangeLog
+  skip: True  # [win]
 
 requirements:
   build:
