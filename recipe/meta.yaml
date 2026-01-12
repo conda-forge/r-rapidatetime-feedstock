@@ -1,4 +1,4 @@
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,15 +9,15 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RApiDatetime_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RApiDatetime/RApiDatetime_{{ version }}.tar.gz
-  sha256: fe4ee608ce7568994125323abbe0d07fc462651a4e057a7e19267f78d1ae0de9
+  sha256: 5cfe0e99d4459af1c71cc6fb43752c5cf046ad101cebce97bfdf8e89faeaf11d
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
   # As of 0.0.9, this package is explicitly Unix-only: https://cran.r-project.org/web/packages/RApiDatetime/ChangeLog
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
