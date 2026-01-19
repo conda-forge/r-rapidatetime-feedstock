@@ -1,4 +1,4 @@
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RApiDatetime_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RApiDatetime/RApiDatetime_{{ version }}.tar.gz
-  sha256: 5cfe0e99d4459af1c71cc6fb43752c5cf046ad101cebce97bfdf8e89faeaf11d
+  sha256: f4a33209c42e424cf58a95abe7ddff7501410703f2a3573cda4415d1109ff616
 
 build:
   number: 0
